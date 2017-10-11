@@ -6,14 +6,29 @@
     <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body class="radial-repeat">
+      <img src="https://d1vxw9s9d8pjrr.cloudfront.net/wp-content/uploads/2014/12/05101521/little-my1.svg"alt="Lilla My" height="300" width="300">
     <h1> Help me choose between...</h1>
-      <img src="https://i.pinimg.com/736x/cf/80/31/cf8031003c2b96bb73f73c16003f6451.jpg"alt="white kittens" height="300" width="300">
     <div class="inputSection">
       <div class="inputs">
         <input placeholder="something"></input>
       </div>
       <button class="addOption">Add</button>
     </div>
+    <div class="resultSection"></div>
     <button class="buttonGo">Go!</button>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      $(function() {
+        $('.resultSection').hide()
+
+
+      var add_option = function() {
+        $('.inputs').append('<input></input>')
+      }
+
+      $('.addOption').click(add_option)
+      })
+    </script>
   </body>
 </html>
