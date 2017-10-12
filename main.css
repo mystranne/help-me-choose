@@ -38,13 +38,18 @@ input {
   border: 1px solid #f08d8f;
 }
 
-.buttonGo {
+.submit {
   background-color: pink;
   border-radius: 10px;
   width: 70px;
   height: 30px;
   border: 1px solid #f08d8f;
 }
-.radial-repeat {
-  background: repeating-radial-gradient(powderblue, powderblue 8px, white 8px, white 16px);
+
+.resultSection {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
